@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Incubadora</string>
+    <string name="temp">Temperatura:</string>
+    <string name="hum">Humedad:</string>
+    <string name="fase">Fase:</string>
+    <string name="err">Error:</string>
+    <string name="con">Conectar</string>
+    <string name="des">Desconectar</string>
+    <string name="env">Enviar</string>
+    <string name="prob">Probar</string>
+    <string name="ref">Referencia</string>
+    <string name="vinculados">Elige tu Incubadora</string>
+    <string name="can">Cancelar</string>
+</resources>

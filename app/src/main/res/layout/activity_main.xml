@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TV_Temp"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/temp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TV_Hum"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/hum"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Temp" />
+
+    <TextView
+        android:id="@+id/TV_ang"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/fase"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Hum" />
+
+    <TextView
+        android:id="@+id/TV_Err"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/err"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_ang" />
+
+    <EditText
+        android:id="@+id/ED_Ref"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:hint="@string/ref"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Err" />
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="cursive"
+        android:onClick="enviar"
+        android:text="@string/env"
+        android:textColor="@color/fondo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ED_Ref" />
+
+    <Button
+        android:id="@+id/probar"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="cursive"
+        android:onClick="prob"
+        android:text="@string/prob"
+        android:textColor="@color/fondo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enviar" />
+
+    <Button
+        android:id="@+id/desconectar"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="cursive"
+        android:onClick="desc"
+        android:text="@string/des"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/probar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
